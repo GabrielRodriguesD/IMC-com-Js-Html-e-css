@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0
+    ;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+;root{
+    --font:        "Roboto", sans-serif;
+/* font=variável = valor que ira receber*/
+}
+
+body{
+    font-family: var(--font);
+    background-color: rgb(147, 182, 225);
+
+}
+
+main{
+    width: 70%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+section{
+    background-color: orange;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px #00000025;
+}
+
+form{
+    height: 300px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo-form{
+    height: 56;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input{
+    height: 30px;
+    border: solid 1px rgb(100, 40, 40);
+    /* outline da barra */
+    border-radius: 6px;
+    font-weight: medium;
+    caret-color: #007aff;
+    /* caret color muda a cor do "|" que apoarece quandom clica na barra */
+    text-indent: 5px;
+}
+
+input::placeholder{
+    color: #3c3c43
+    /* mudou a mensagem de Ex. que aparece na barra  */
+}
+
+input[type="number"]{
+    appearance: textfield;
+}
+
+input[type="number"]::webkit-outer-spin-button,
+input[type="number"]::webkit-outer-spin-button{
+    display: none;
+    margin: 0;
+}
+
+button{
+    height: 30px;
+    width: 200px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: medium;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* [] = seletor de tipo */
+button[type="submit"]{
+    background-color: rgb(194, 235, 133);
+    /*background-color: vai m udar a cor que o botao Calcular vai ficar */
+    color: rgb(11, 3, 3);
+    /* color: muda o texto dentro do botão */
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(76, 102, 40);
+    /* vai m udar a cor que o botao Calcular vai ficar com o mouse em cima */
+}
+
+table{
+    width: 100%;
+    /* comparado com a section que ele pertence */
+    margin: 30px 0;
+    border: none;
+    border-collapse: collapse
+}
+
+caption{
+    font-size: 1.2rem;
+    /* rem é medida de fonte, 1 rem = 16px */
+
+}
+
+caption,th{
+    text-align: left;
+}
+
+/* child filho do tr */
+/* odd impar, even par */
+tbody>tr:nth-child(odd){
+    background-color: #F2f2f7;
+}
+
+tr{
+    height: 40px;
+}
+
+th,
+tr,
+td{
+    border: none;
+}
+
+caption,
+th,
+td{
+    padding: 15px;
+}
+
+.botao-tabela{
+    background-color: rgb(192, 107, 107);
+    color: white;
+}
+
+/* hover: passar o mouse por cima */
+.botao-tabela:hover{
+    background-color:rgb(106, 58, 58);
+}
+
+
+
+
+
+
+
+
+
+
+
+

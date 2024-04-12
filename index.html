@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Rodrigues">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora IMC</h1>
+
+        <section>
+            <h2>Cadastro de informações</h2>
+
+            <form method="post" onsubmit="CalcularImc(event)">
+            <div class="camp-form">
+                <label for="nome">Nome:</label>
+                <input type="text" name="campo-nome" id="name" placeholder="insira seu nome completo">
+                <!-- //placeholder = texto que aparece dentro da caixa de pesquisa -->
+            </div>
+
+            <div class="camp-form">
+                <label for="altura">Altura:</label>
+                <input type="number" name="campo-altura" id="height" placeholder="insira sua altura. Ex 1.85">
+
+            </div>
+
+            <div class="camp-form">
+                <label for="peso">Peso:</label>
+                <input type="number" name="campo-peso" id="weight" placeholder="insira seu peso em kg. Ex: 85">
+            </div>
+
+            <div class="conjunto-botoes">
+                <button type="reset">Cancelar</button>
+                <button type="submit">Calcular</button>
+            </div>
+        </form>
+        </section>
+
+        <section>
+            <!-- Construção de Tabela -->
+            <h2>Usuários Cadastrados</h2>
+
+            <table>
+                <caption> Tabela de usuários</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Altura</th>
+                        <th>Peso</th>
+                        <th>Valor do IMC</th>
+                        <th>Classificação do IMC</th>
+                        <th>Data de cadastro</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                    <!--  Corpo da tabela criado no JS-->
+                </tbody>
+            </table>
+            <button class="botao-tabela" onclick="deletarRegistros()">
+                Limpar valores
+            </button>
+        </section>
+    </main>
+</body>
+</html>
