@@ -57,6 +57,7 @@ input{
     caret-color: #007aff;
     /* caret color muda a cor do "|" que apoarece quandom clica na barra */
     text-indent: 5px;
+    width: 80%
 }
 
 input::placeholder{
@@ -148,6 +149,10 @@ td{
 /* hover: passar o mouse por cima */
 .botao-tabela:hover{
     background-color:rgb(106, 58, 58);
+}
+
+.linha-mensagem td{
+    text-align: center;
 }
 
 
