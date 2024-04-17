@@ -134,7 +134,16 @@ function montarTabela(listaDeCadastrados) {
     tabela.innerHTML = template;
 }
 
-function LimparDados(listaUsuario) {
-    listaUsuario.pop()
-    
+// function LimparDados(usuariosCadastrados) {
+//     localStorage.pop("usuariosCadastrados")
+// }
+
+function deletarRegistros(){
+//metodo 1 (n ta indo)
+    localStorage.removeItem("usuariosCadastrados")
+
+//metodo 2 mais simples
+    // localStorage.clear();
+
+    window.location.reload();
 }
